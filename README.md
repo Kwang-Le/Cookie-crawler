@@ -15,26 +15,9 @@
 
 ## Introduction
 
-This repository is a predecessor of the OpenWPM-based crawler implementation found at:
-
-https://github.com/dibollinger/CookieBlock-Consent-Crawler
-
 It retrieves cookie information from a set of Consent Management Providers, most importantly
 the purpose information of the cookie. This is used both for training a classifier, and to
 detect potential violations of the GDPR requirements.
-
-The crawler is released here separately under the BSD 3-clause license, such that the relevant
-crawler logic can be used without the GPL.
-
-## About CookieBlock
-
-CookieBlock is a browser extension developed by researchers at ETH Zürich,
-which automatically enforces GDPR cookie consent preferences of the user
-without needing to rely on the website to respect the user's choices.
-
-More information can be found on the official website:
-
-https://karelkubicek.github.io/post/cookieblock
 
 ## Background Information
 
@@ -82,8 +65,6 @@ The categories are hereby graded from "Necessary" being the most, and "Advertisi
 In addition to the code, this repository also includes an informal analysis of how
 the CookieBot and OneTrust CMPs store the relevant cookie consent data, and what
 information can be retrieved.
-
-The code in this repository is licensed under BSD 3-clause.
 
 ## Installation
 
@@ -148,36 +129,3 @@ contains the following table:
     ./schema           -- Contains the database schema.
     ./src              -- Source files for the crawler.
     ./run_scraper.py   -- Command line script to run the crawler, with usage described above.
-
-## Credits
-This repository was created as part of the master thesis __"Analyzing Cookies Compliance with the GDPR"__,
-which can be found at:
-
-https://www.research-collection.ethz.ch/handle/20.500.11850/477333
-
-as well as the paper __"Automating Cookie Consent and GDPR Violation Detection"__, which can be found at:
-
-https://karelkubicek.github.io/post/cookieblock.html
-
-__Thesis supervision and co-authors:__
-* Karel Kubicek
-* Dr. Carlos Cotrini
-* Prof. Dr. David Basin
-* Information Security Group at ETH Zürich
-
----
-See also the following repositories for other related components:
-* [CookieBlock Browser Extension](https://github.com/dibollinger/CookieBlock)
-* [OpenWPM-based Consent Crawler](https://github.com/dibollinger/CookieBlock-Consent-Crawler)
-* [Cookie Consent Classifier](https://github.com/dibollinger/CookieBlock-Consent-Classifier)
-* [Violation Detection](https://github.com/dibollinger/CookieBlock-Other-Scripts)
-* [Collected Data](https://doi.org/10.5281/zenodo.5838646)
-
-
-## License
-
-__Copyright (c) 2021 Dino Bollinger, Department of Computer Science at ETH Zürich, Information Security Group__
-
-__With help from Karel Kubicek, Dr. Carlos Cotrini and Prof. Dr. David Basin.__
-
-This project is released under the BSD 3-clause license, see the included LICENSE file.
